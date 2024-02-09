@@ -45,8 +45,67 @@
 #     return n - left
 # print(h_index(citations))
 
-#6) original_list = [1, 2, 3, 4, 5]
-# squared_list = list(map(lambda x: x ** 2, original_list))
-# print(squared_list)
+
+
+
+
+#6) game = 'yes'
+# while game == 'yes':
+#
+#    num = str(int(input('enter secret numbers:')))
+#
+#
+#
+#    attempt = True
+#
+#    while attempt:
+#
+#        player_num = input("your guess: ")
+#
+#        bulls = 0
+#
+#        cows = 0
+#
+#        for i in range(4):
+#
+#            if num[i] == player_num[i]:
+#
+#                bulls += 1
+#
+#            elif player_num[i] in num:
+#
+#                cows += 1
+#
+#        if bulls == 4:
+#
+#            print("4A!YOU WIN!")
+#
+#            game = input('Do you want restart game?(yes or no): ')
+#
+#            attempt = False
+#
+#        else:
+#
+#            print(f'{bulls}A, {cows} B')
+
+
+
+
+# import math
+# def numSquares(n):
+#
+#     dp = [0] * (n + 1)
+#
+#     for i in range(1, n + 1):
+#
+#         dp[i] = i
+#
+#
+#         for j in range(1, int(math.sqrt(i)) + 1):
+#
+#             dp[i] = min(dp[i], 1 + dp[i - j*j])
+#
+#     return dp[n]
+# print(numSquares(int(input('enter number'))))
 
 
