@@ -152,3 +152,26 @@
 # my_list = [1, 2, 3, 4, 5]
 # new_list = list(filter(lambda x: (x%2==0),my_list))
 # print(new_list)
+
+# strings = ['aitu','enu','kbtu']
+# upper_cased = list(map(lambda string: string.upper(), strings))
+# print(upper_cased)
+
+# strings = ['aitu','enu', 'python', 'programming', 'code']
+# filtered_strings = list(filter(lambda x: len(x) > 5, strings))
+# print(filtered_strings)
+
+# fahrenheit_temperatures = [32, 68, 86, 104]
+# celsius_temperatures = list(map(lambda x: (5/9) * (x - 32), fahrenheit_temperatures))
+# print(celsius_temperatures)
+
+# def is_prime(n):
+#     if n <= 1:
+#         return False
+#     for i in range(2, int(n**0.5) + 1):
+#         if n % i == 0:
+#             return False
+#     return True
+# numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+# prime_numbers = list(filter(lambda x: is_prime(x), numbers))
+# print(prime_numbers)
