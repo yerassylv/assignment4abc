@@ -236,3 +236,18 @@
 # numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,16]
 # perfect_squares = list(filter(lambda x: math.isqrt(x)**2 == x, numbers))
 # print(perfect_squares)
+
+
+# Given an integer n, return true if it is a power of four. Otherwise, return false.
+# An integer n is a power of four, if there exists an integer x such that n == 4x
+# .
+# def is_power_of_four(n):
+#     if n == 1:
+#         return True
+#     if n < 4 or n % 4 != 0:
+#         return False
+#     return is_power_of_four(n // 4)
+# print(is_power_of_four(16))
+# print(is_power_of_four(5))
+
+
