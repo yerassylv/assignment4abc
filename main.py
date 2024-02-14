@@ -175,3 +175,64 @@
 # numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 # prime_numbers = list(filter(lambda x: is_prime(x), numbers))
 # print(prime_numbers)
+
+
+# list1 = [1, 2, 3, 4, 5]
+# list2 = [6, 7, 8, 9, 10]
+# result = list(map(lambda x, y: x**2 + y**2, list1, list2))
+# print(result)
+
+# strings = ['radar', 'hello', 'level', 'madam', 'deified']
+# palindromes = list(filter(lambda x: x == x[::-1], strings))
+# print(palindromes)
+
+# strings = ['hello', 'world', 'python', 'programming', 'code']
+# lengths = list(map(lambda x: len(x), strings))
+# print(lengths)
+
+# numbers = [1, -2, 3, -4, 5, -6, 7, -8, 9, -10]
+# positive_numbers = list(filter(lambda x: x > 0, numbers))
+# print(positive_numbers)
+
+# def generate_fibonacci(n):
+#     fib_sequence = [0, 1]
+#     if n <= 2:
+#         return fib_sequence[:n]
+#     else:
+#         fib_sequence.extend(map(lambda x, y: x + y, fib_sequence[-2:], fib_sequence[-1:] + [0] * (n - 2)))
+#         return fib_sequence
+# n = 10
+# print(generate_fibonacci(n))
+
+# Given a list of strings, use filter and lambda to create a new list
+# containing only pairs of anagrams
+# strings = ['listen', 'enlist', 'silent', 'hello', 'world', 'python']
+# anagrams = list(filter(lambda x: sorted(x[0]) == sorted(x[1]), [(x, y) for x in strings for y in strings if x != y]))
+# print(anagrams)
+
+#
+# .Given a list of strings, use filter and lambda to create a new list containing
+# only strings that consist entirely of consonants. (2 points)
+# def contains_only_consonants(string):
+#     vowels = 'aeiouAEIOU'
+#     return all(char not in vowels for char in string)
+# string_list = ["hello", "world", "python", "programming", "Yerassyl", "crypt"]
+# consonant_strings = list(filter(lambda x: contains_only_consonants(x), string_list))
+# print(consonant_strings)
+
+
+
+
+# .Given a list of numbers, use map and lambda to create a new list where
+# each element is the rolling average of the last three elements in the original
+# list.
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# rolling_average = list(map(lambda i: sum(numbers[i-2:i+1])/3, range(2, len(numbers))))
+# print(rolling_average)
+
+# Given a list of integers, use filter and lambda to create a new list
+# containing only perfect square numbers.
+# import math
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,16]
+# perfect_squares = list(filter(lambda x: math.isqrt(x)**2 == x, numbers))
+# print(perfect_squares)
