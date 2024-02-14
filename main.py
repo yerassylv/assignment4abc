@@ -91,7 +91,7 @@
 
 
 
-# import math
+#7) import math
 # def numSquares(n):
 #
 #     dp = [0] * (n + 1)
@@ -107,3 +107,48 @@
 #
 #     return dp[n]
 # print(numSquares(int(input('enter number'))))
+
+
+
+#8) from collections import Counter
+# def checkInclusion(s1, s2):
+#     len_s1 = len(s1)
+#     len_s2 = len(s2)
+#
+#     if len_s1 > len_s2:
+#         return False
+#
+#     freq_s1 = Counter(s1)
+#     freq_window = Counter(s2[:len_s1])
+#
+#     if freq_s1 == freq_window:
+#         return True
+#
+#     for i in range(len_s1, len_s2):
+#         char_out = s2[i - len_s1]
+#         if freq_window[char_out] == 1:
+#             del freq_window[char_out]
+#         else:
+#             freq_window[char_out] -= 1
+#
+#         char_in = s2[i]
+#         freq_window[char_in] += 1
+#
+#         if freq_s1 == freq_window:
+#             return True
+#
+#     return False
+#
+# s1 = "ab"
+# s2 = "eidbaooo"
+# result = checkInclusion(s1, s2)
+# print(result)
+
+
+# my_list = [1, 2, 3, 4, 5]
+# new_list = list(map(lambda x: x**2, my_list))
+# print(new_list)
+
+# my_list = [1, 2, 3, 4, 5]
+# new_list = list(filter(lambda x: (x%2==0),my_list))
+# print(new_list)
